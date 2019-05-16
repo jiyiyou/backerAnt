@@ -1,38 +1,12 @@
 <template>
-  <a-locale-provider :locale="zh_CN">
-    <div id="app">
-      <img src="./assets/logo.png">
-      <div>
-        <p>
-          If Ant-Design-Vue is successfully added to this project, you'll see an
-          <code v-text="'<a-button>'"></code>
-          <code v-text="'<a-pagination>'"></code>
-          below
-        </p>
-        <a-button type="primary">Primary</a-button>
-        <a-pagination size="small" :total="50" showSizeChanger showQuickJumper />
-      </div>
-      <HelloWorld msg="Welcome to Your Vue.js App"/>
-    </div>
-  </a-locale-provider>
+  <div id="app">
+<!--    <div id="nav">-->
+<!--      <router-link to="/">Home</router-link> |-->
+<!--      <router-link to="/about">About</router-link>-->
+<!--    </div>-->
+    <router-view/>
+  </div>
 </template>
-
-<script>
-import zh_CN from 'ant-design-vue/lib/locale-provider/zh_CN'
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'app',
-  data() {
-    return {
-      zh_CN,
-    }
-  },
-  components: {
-    HelloWorld
-  }
-}
-</script>
 
 <style>
 #app {
@@ -41,6 +15,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: 100%!important;
 }
+.fl ,.lt {  float: left;  }
+.fr ,.rt {  float: right;  }
+/*清除浮动*/
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+.clear {clear:both;}
+.flex{display: flex;display:-webkit-flex;justify-content: space-between;flex-wrap: wrap}
+/*placeholder 颜色*/
+:-moz-placeholder { color: #666; }
+::-moz-placeholder { color: #666;}
+input:-ms-input-placeholder{ color: #666;}
+input::-webkit-input-placeholder{ color: #666;}
 </style>
