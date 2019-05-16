@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d230bbc"],{ee17:function(e,n,t){"use strict";t.r(n);var c=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("p",[e._v("商品推荐")])},s=[],u={name:"suggest"},a=u,r=t("2877"),l=Object(r["a"])(a,c,s,!1,null,"42959018",null);n["default"]=l.exports}}]);
